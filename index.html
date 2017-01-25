@@ -2,150 +2,168 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>HTML Academy: Нёрдс</title>
+        <title>Нёрдс</title>
     </head>
     <body>
 	    <header class="main-header">
 	    	<div class="container">
-	    		<div class="index-logo">
-	    			<img src="img\index-logo.png" width="160" heigth="65" alt="NERD'S">
+	    		<div class="logo">
+	    			<img src="img\logo.png" width="160" heigth="65" alt="NERD'S">
 	    		</div>
-				<nav class="main-navigation">
-					<ul>
-						<li>
-							<a href="#">студия</a>
-						</li>
-						<li>
-							<a href="#">клиенты</a>
-						</li>
-						<li>
-							<a href="#">магазин</a>
-						</li>
-						<li>
-							<a href="#">контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="basket-block">
+				    <nav class="main-navigation">
+						<ul>
+							<li>
+								<a href="#">студия</a>
+							</li>
+							<li>
+								<a href="#">клиенты</a>
+							</li>
+							<li>
+							    <a class="catalog" href="#">магазин</a>
+							    <!-- Правильно каталог добавил? -->
+							</li>
+							<li>
+								<a href="#">контакты</a>
+							</li>
+						</ul>
+					</nav>
+				<div class="basket">
 					<a class="basket" href="#">Корзина</a>
 				</div>
 	    	</div>
 	    </header>
-	    <main class="container">
-			<div class="slider-top">
-				<h1>Долго, дорого, скурпулезно.</h1>
-				   <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-				<a class="btn" href="#">узнать больше</a>
-			<div class="slider">
-				<div class="gallery">
-				   <figure class="gallery-content">
-				   	  <img src="#" width="698" height="413" alt="telephons">
-				    </figure>
-				    <!-- Непойму как другие два слайда сюда правильно привязать?  -->
-				   		<button class="btn slide-1" type="button"></button>
-				    	<button class="btn slide-2" type="button"></button>
-				    	<button class="btn slide-3" type="button"></button>	
-			    </div>	
-			</div>
-			<section class="feauters">
-				<div>
-				<ul>
-					<li class="feauters-1">
-						<img src="#" width="300" height="146">
-						<b>веб-сайты</b>
-						<p>
-							Мир никогда не будет прежним после того как увидит ваш сайт!   	
-						</p>
-						<a class="feauters-btn-1"></a>	
-					</li>
-					<li class="feauters-2">
-						<img src="#" width="300" height="146">
-						<b>приложения</b>
-						<p>
-							Покорите топ-10 приложений в AppStore и Google Play	
-						</p>
-						<a class="feauters-btn-2"></a>
-					</li>
-					<li class="feauters-3">
-						<img src="#" width="300" height="146">
-						<b>презентации</b>
-						<p>
-							Вы даже не подозреваете, насколько вы изумительны!	
-						</p>
-						<a class="feauters-btn-3"></a>	
-					</li>
-				</ul>
-				</div>	
-				<div class="index-content-left">
-					<h2>
-						Мы-маленькая, но гордая дизайн-студия из Краснодара.
-					</h2>
-					<p>
-						Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
-					</p>
-					<h3>
-						Выполняем заказы на разработку:
-					</h3>
-						<span>- Веб-сайтов любой сложности</span>
-						<span>- Мобильных приложений для iOS и Android</span>
-						<span>- Слайдшоу и видео для корпоративных презентаций</span>
-				</div>
-				<div class="index-logo-color">
-					<img src="#" width="360" height="208" alt="NERD'S">
-				</div>
-				<div class="index-content-right">
-					<h3>
-						с 2004 года любим точность во всем: 
-					</h3>
-					<table>
-						<tr>
-							<td>146%</td>
-							<td>100%</td>
-							<td>50%</td>
-						</tr>
-						<tr>
-							<td>Уровень самоотдачи</td>
-							<td>Соблюдение сроков</td>
-							<td>Минимальная предоплата</td>
-						</tr>
-					</table>
-	
-				</div>
-				<div>
-					<ul class="partners">
-					<!-- Не знаю как связать ссылку на картинку и URL? иправильно ли это вообще. может нужно как-то по другому это реализовать? -->
-						<li>
-							<img src="#" width="199" height="68" alt="">
-							<a href="#">html academy</a>	
-						</li>
-						<li>
-							<img src="#" width="209" height="90" alt="">
-							<a href="#">borodinski</a>	
-						</li>
-						<li>
-							<img src="#" width="185" height="52" alt="">
-							<a href="#">pink</a>	
-						</li>
-						<li>
-							<img src="#" width="173" height="84" alt="">
-							<a href="#">mishka</a>	
-						</li>
-					</ul>
-				</div>
-				<div class="index-content-bottom">
-					<img src="#" width="1725" height="808" alt="карта">
-					<div class="contacts">
-						<h3>NЁRDS DESIGN STUDIO</h3>
-						<p>
-							191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-							тел.+7(812)275-75-75
-						</p>
-						<a class="btn" href="#">напишите нам</a>
-						<!-- Не знаю как правильно отразить маркер на карте -->
-						<img src="map-marker">
+	    	<main class="container">
+				<div class="slider-top">
+					<b class="slogan">Долго, дорого, скурпулезно.</b>
+					<!-- Подойдет тут тег <b>? -->
+				   	<p class="slider-top-content">
+				   	    Математически выверенный дизайн для вашего сайта или мобильного приложения
+				   	</p>
+					<a class="btn" href="#">узнать больше</a>
+					<div class="slider">
+						<div class="slider-item">
+				  		    <figure class="gallery-content">
+				   	 	    <img src="#" width="698" height="413" alt="telephons">
+				    	    </figure>
+				    <!-- Правильно исправил? или <figure> тут не подходит? с кнопками все нормально? -->
+							<div class="slider-control">
+				   				<button class="btn slide-1" type="button"></button>
+				    			<button class="btn slide-2" type="button"></button>
+				    			<button class="btn slide-3" type="button"></button>
+				    		</div>		
+			    		</div>	
 					</div>
 				</div>
-			</section>
+				<section class="feauters">
+					<ul>
+						<li class="declaration-1">
+							<img src="#" width="300" height="146">
+							<h2>веб-сайты</h2>
+							<p>
+								Мир никогда не будет прежним после того как увидит ваш сайт!   	
+							</p>
+							<a class="declaration-btn" href="#"></a>	
+						</li>
+						<li class="declaration-2">
+							<img src="#" width="300" height="146">
+							<h2>приложения</h2>
+							<p>
+								Покорите топ-10 приложений в AppStore и Google Play	
+							</p>
+							<a class="declaration-btn" href="#"></a>
+						</li>
+						<li class="declaration-3">
+							<img src="#" width="300" height="146">
+							<h2>презентации</h2>
+							<p>
+								Вы даже не подозреваете, насколько вы изумительны!	
+							</p>
+							<a class="declaration-btn" href="#"></a>	
+						</li>
+					</ul>
+					<div class="left-column">
+						<p clacc="cutaway-1">
+							Мы-маленькая, но гордая дизайн-студия из Краснодара.
+						</p>
+						<p class="cutaway-2">
+							Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+						</p>
+						<p class="cutaway-3">
+							Выполняем заказы на разработку:
+						</p>
+						<ul class="list">
+							<li>- Веб-сайтов любой сложности</li>
+							<li>- Мобильных приложений для iOS и Android</li>
+							<li>- Слайдшоу и видео для корпоративных презентаций</li>
+						</ul>
+					</div>
+					<div class="logo-color">
+						<img src="#" width="360" height="208" alt="NERD'S">
+					</div>
+					<div class="right-column">
+						<p class="exactness">
+							с 2004 года любим точность во всем: 
+						</p>
+						<!-- ВОТ сделал ДВА варианта списков, какой правильнее? -->
+					<!-- <ul> -->
+						<!-- <li>146%</li> -->
+						<!-- <li>100%</li> -->
+						<!-- <li>50%</li> -->
+					<!-- </ul> -->
+					<!-- <ul> -->
+						<!-- <li>Уровень самоотдачи</li> -->
+						<!-- <li>Соблюдение сроков</li> -->
+						<!-- <li>Минимальная предоплата</li> -->
+					<!-- </ul> -->
+						<ul>
+							<li>146%</li>
+							<li>Уровень самоотдачи</li>
+						</ul>
+						<ul>
+							<li>100%</li>
+							<li>Соблюдение сроков</li>
+						</ul>
+						<ul>
+							<li>50%</li>
+							<li>Минимальная предоплата</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="partners">
+						<!-- Правильно переделал?-->
+							<li>
+								<a href="#">
+								<img src="#" width="199" height="68" alt="">html academy</a>	
+							</li>
+							<li>
+								<a href="#">
+								<img src="#" width="209" height="90" alt="">borodinski</a>	
+							</li>
+							<li>
+								<a href="#">
+								<img src="#" width="185" height="52" alt="">pink</a>	
+							</li>
+							<li>
+								<a href="#">
+								<img src="#" width="173" height="84" alt="">mishka</a>	
+							</li>
+						</ul>
+					</div>
+					<div class="address">
+						<img src="#" width="1725" height="808" alt="карта">
+						<div class="contacts">
+							<h3>NЁRDS DESIGN STUDIO</h3>
+							<p>
+								191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+								тел.<a href="tel:+7(812)275-75-75"></a>
+							</p>
+							<a class="btn" href="#">напишите нам</a>
+							<!-- Правильно маркер исправил? -->
+							<a class="marker" href="map-marker"></a>
+						</div>
+					</div>
+				</section>
+		    </main>	
 		<footer class="main-footer">
 			<div class="container">
 				<div class="footer-social">
@@ -155,10 +173,12 @@
 					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
 					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 				</div>
+				<div class="discount">
 				<p>Давайте дружить, это выгодно!</p>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</div>
 		</footer>	
-	    </main> 
 	</body>
 </html>
+<!-- я не совсем поня, в конце кода оставлять пустую строку нужно где? какой у неё будет номер? -->
