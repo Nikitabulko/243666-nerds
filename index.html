@@ -10,23 +10,23 @@
 	    		<div class="logo">
 	    			<img src="img\logo.png" width="160" heigth="65" alt="NERD'S">
 	    		</div>
-				    <nav class="main-navigation">
-						<ul>
-							<li>
-								<a href="#">студия</a>
-							</li>
-							<li>
-								<a href="#">клиенты</a>
-							</li>
-							<li>
-							    <a class="catalog" href="#">магазин</a>
+				<nav class="main-navigation">
+					<ul>
+						<li>
+							<a href="#">студия</a>
+						</li>
+						<li>
+							<a href="#">клиенты</a>
+						</li>
+						<li>
+							<a class="catalog" href="catalog.html">магазин</a>
 							    <!-- Правильно каталог добавил? -->
-							</li>
-							<li>
-								<a href="#">контакты</a>
-							</li>
-						</ul>
-					</nav>
+						</li>
+						<li>
+							<a href="#">контакты</a>
+						</li>
+					</ul>
+				</nav>
 				<div class="basket">
 					<a class="basket" href="#">Корзина</a>
 				</div>
@@ -34,18 +34,18 @@
 	    </header>
 	    	<main class="container">
 				<div class="slider-top">
-					<b class="slogan">Долго, дорого, скурпулезно.</b>
-					<!-- Подойдет тут тег <b>? -->
+				<!-- А в чем тут с отступами проблема? -->
+					<p class="slogan">Долго, дорого, скурпулезно.</p>
 				   	<p class="slider-top-content">
 				   	    Математически выверенный дизайн для вашего сайта или мобильного приложения
 				   	</p>
 					<a class="btn" href="#">узнать больше</a>
 					<div class="slider">
 						<div class="slider-item">
-				  		    <figure class="gallery-content">
+				  		    <div class="gallery-content">
 				   	 	    <img src="#" width="698" height="413" alt="telephons">
-				    	    </figure>
-				    <!-- Правильно исправил? или <figure> тут не подходит? с кнопками все нормально? -->
+				    	    </div>
+				    <!-- Правильно исправил?  -->
 							<div class="slider-control">
 				   				<button class="btn slide-1" type="button"></button>
 				    			<button class="btn slide-2" type="button"></button>
@@ -54,33 +54,33 @@
 			    		</div>	
 					</div>
 				</div>
-				<section class="feauters">
-					<ul>
-						<li class="declaration-1">
+				<div class="feauters">
+					<div>
+						<article class="declaration-1">
 							<img src="#" width="300" height="146">
 							<h2>веб-сайты</h2>
 							<p>
 								Мир никогда не будет прежним после того как увидит ваш сайт!   	
 							</p>
 							<a class="declaration-btn" href="#"></a>	
-						</li>
-						<li class="declaration-2">
+						</article>
+						<article class="declaration-2">
 							<img src="#" width="300" height="146">
 							<h2>приложения</h2>
 							<p>
 								Покорите топ-10 приложений в AppStore и Google Play	
 							</p>
 							<a class="declaration-btn" href="#"></a>
-						</li>
-						<li class="declaration-3">
+						</article>
+						<article class="declaration-3">
 							<img src="#" width="300" height="146">
 							<h2>презентации</h2>
 							<p>
 								Вы даже не подозреваете, насколько вы изумительны!	
 							</p>
 							<a class="declaration-btn" href="#"></a>	
-						</li>
-					</ul>
+						</article>
+					</div>
 					<div class="left-column">
 						<p clacc="cutaway-1">
 							Мы-маленькая, но гордая дизайн-студия из Краснодара.
@@ -89,6 +89,7 @@
 							Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
 						</p>
 						<p class="cutaway-3">
+						<!-- А как правильнее было сделать? как правильно переименовать классы cutaway-1,2,3? -->
 							Выполняем заказы на разработку:
 						</p>
 						<ul class="list">
@@ -104,28 +105,19 @@
 						<p class="exactness">
 							с 2004 года любим точность во всем: 
 						</p>
-						<!-- ВОТ сделал ДВА варианта списков, какой правильнее? -->
-					<!-- <ul> -->
-						<!-- <li>146%</li> -->
-						<!-- <li>100%</li> -->
-						<!-- <li>50%</li> -->
-					<!-- </ul> -->
-					<!-- <ul> -->
-						<!-- <li>Уровень самоотдачи</li> -->
-						<!-- <li>Соблюдение сроков</li> -->
-						<!-- <li>Минимальная предоплата</li> -->
-					<!-- </ul> -->
 						<ul>
-							<li>146%</li>
-							<li>Уровень самоотдачи</li>
-						</ul>
-						<ul>
-							<li>100%</li>
-							<li>Соблюдение сроков</li>
-						</ul>
-						<ul>
-							<li>50%</li>
-							<li>Минимальная предоплата</li>
+							<li>
+								<span>146%</span>
+								<span>Уровень самоотдачи</span>
+							</li>
+							<li>
+								<span>100%</span>
+								<span>Соблюдение сроков</span>
+							</li>
+							<li>
+								<span>50%</span>
+								<span>Минимальная предоплата</span>
+							</li>
 						</ul>
 					</div>
 					<div>
@@ -133,19 +125,19 @@
 						<!-- Правильно переделал?-->
 							<li>
 								<a href="#">
-								<img src="#" width="199" height="68" alt="">html academy</a>	
+								<img src="#" width="199" height="68" alt="html academy"></a>	
 							</li>
 							<li>
 								<a href="#">
-								<img src="#" width="209" height="90" alt="">borodinski</a>	
+								<img src="#" width="209" height="90" alt="borodinski"></a>	
 							</li>
 							<li>
 								<a href="#">
-								<img src="#" width="185" height="52" alt="">pink</a>	
+								<img src="#" width="185" height="52" alt="pink"></a>	
 							</li>
 							<li>
 								<a href="#">
-								<img src="#" width="173" height="84" alt="">mishka</a>	
+								<img src="#" width="173" height="84" alt="mishka"></a>	
 							</li>
 						</ul>
 					</div>
@@ -155,14 +147,13 @@
 							<h3>NЁRDS DESIGN STUDIO</h3>
 							<p>
 								191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-								тел.<a href="tel:+7(812)275-75-75"></a>
+								тел.<a href="tel:+7(812)275-75-75">+7(812)275-75-75</a>
 							</p>
 							<a class="btn" href="#">напишите нам</a>
-							<!-- Правильно маркер исправил? -->
-							<a class="marker" href="map-marker"></a>
+							<!-- Правильно маркер убрал? -->
 						</div>
 					</div>
-				</section>
+				</div>
 		    </main>	
 		<footer class="main-footer">
 			<div class="container">
@@ -181,4 +172,3 @@
 		</footer>	
 	</body>
 </html>
-<!-- я не совсем поня, в конце кода оставлять пустую строку нужно где? какой у неё будет номер? -->
