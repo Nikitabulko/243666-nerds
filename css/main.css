@@ -3,4 +3,58 @@ body {
    color: #283136;
    font-weight: normal;
    font-family: Roboto;
+   background-color: #eeeeee;
+}
+
+.main-header {
+	width: 1140px;
+	height: 80px;
+    text-align: top;
+}
+
+.logo {
+	float: left;
+	width: 160px;
+	height: 65px;
+	background-color: yellow;
+	margin-left: 140px;
+	margin-top: 50px;
+}
+
+.main-navigation {
+	float: left;
+	width: 450px;
+	height: 65px;
+	background-color: yellow;
+	margin-left: 200px ;
+	margin-top: 50px;
+}
+
+.basket {
+	float: right;
+    width: 130px;
+    height: 65px;
+    background-color: yellow;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+li {
+	display: inline-block;
+}
+
+.slogan {
+	float: left;
+	width: 380px;
+	height: 107px;
+	background-color: yellow;
+	margin-top: 84px;
+	margin-left: 140px;
+}
+
+.slider-top-content {
+	width: 370px;
+	height: 40px;
+	margin-left: 140px;
+	margin-top: 28px;
 }
