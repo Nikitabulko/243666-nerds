@@ -42,26 +42,29 @@ header {
 	padding: 10px;
 	padding-left: 30px;
 }
+/*как корзину сделать правильно? как разьединить саму корзину с надписью?*/
 
-.basket {
+.basket a {
+	display: block;
 	float: right;
-	width: 150px;
-	min-height: 65px;
-	margin-right: 50px;
+	min-height: 40px;
+	margin-right: 140px;
 	margin-top: 50px;
-	background: yellow;
+	padding: 10px;
+	background: lightyellow;
 }
 
-.column1 p {
+.column1 {
 	width: 380px;
 	height: 200px;
+	padding-left: 140px;
 }
 /*самая главная проблема. слайдер-слоган не получается одним кведратным блоком разместить
 разбивается на две строки (с красным фоном), а в блоке column1 почемуто не размещается*/
 .slider-slogan,
 .slider-top-content {
-	display: inline-block;
-	background: red;
+	clear: both;
+	display: block;
 }
 /* картинку слайдера не могу упорядочить... */
 .slider {
@@ -140,7 +143,12 @@ header {
 	margin-left: 90px;
 }
 
+
 .discount {
 	display: inline;
 	text-align: center;
+}
+/* и этот список с процентами, не пойму как вертикально повернуть?*/
+.right-column li {
+	list-style: none;
 }
