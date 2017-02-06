@@ -3,58 +3,144 @@ body {
    color: #283136;
    font-weight: normal;
    font-family: Roboto;
-   background-color: #eeeeee;
+   background-color: #ffffff;
+}
+
+header {
+	background-image: url("../img/grey back.jpg");
 }
 
 .main-header {
-	width: 1140px;
-	height: 80px;
-    text-align: top;
+	min-height: 546px;
+}
+
+.container {
+	padding: 10px 10px;
 }
 
 .logo {
 	float: left;
 	width: 160px;
-	height: 65px;
-	background-color: yellow;
+	min-height: 65px;
 	margin-left: 140px;
 	margin-top: 50px;
+	background: yellow;
 }
 
 .main-navigation {
 	float: left;
-	width: 450px;
-	height: 65px;
-	background-color: yellow;
-	margin-left: 200px ;
+	width: 600px;
+	min-height: 65px;
+	margin-left: 20px;
 	margin-top: 50px;
+	background: yellow;
+}
+
+.main-navigation li {
+	list-style;
+	display: inline;
+	padding: 10px;
+	padding-left: 30px;
 }
 
 .basket {
 	float: right;
-    width: 130px;
-    height: 65px;
-    background-color: yellow;
-    margin-left: 20px;
-    margin-top: 50px;
+	width: 150px;
+	min-height: 65px;
+	margin-right: 50px;
+	margin-top: 50px;
+	background: yellow;
 }
 
-li {
-	display: inline-block;
-}
-
-.slogan {
-	float: left;
+.column1 p {
 	width: 380px;
-	height: 107px;
-	background-color: yellow;
-	margin-top: 84px;
-	margin-left: 140px;
+	height: 200px;
+}
+/*самая главная проблема. слайдер-слоган не получается одним кведратным блоком разместить
+разбивается на две строки (с красным фоном), а в блоке column1 почемуто не размещается*/
+.slider-slogan,
+.slider-top-content {
+	display: inline-block;
+	background: red;
+}
+/* картинку слайдера не могу упорядочить... */
+.slider {
+	float: right;
+	width: 698px;
+	height: 413px;
 }
 
-.slider-top-content {
-	width: 370px;
-	height: 40px;
+.declaration {
+	background: lightblue;
+	margin-top: 80px;
+}
+
+.declaration-1 {
+	float: left;
 	margin-left: 140px;
-	margin-top: 28px;
+	width: 300px;
+	height: 350px;
+}
+
+.declaration-2 {
+	float: left;
+	margin-left: 100px;
+	width: 300px;
+	height: 350px;
+}
+
+.declaration-3 {
+	float: left;
+	margin-left: 100px;
+	width: 300px;
+	height: 350px;
+}
+
+.left-column {
+	float: left;
+	margin-left: 140px;
+	width: 660px;
+	height: 370px;
+}
+/* нижнее правило не работает не меняется размер шрифта*/
+.left-column .cutaway-1 {
+	font-size: 45px;
+	font-weight: medium;
+}
+
+.logo-color {
+	float: right;
+	margin-right: 0px;
+	width: 360px;
+	height: 208px;
+}
+
+.right-column {
+	float: right;
+	margin-right: 0px;
+	margin-top: 40px;
+	padding-left: 50px;
+	padding-right: 0;
+	width: 360px;
+	height: 160px;
+
+}
+
+.partners {
+	clear: both;
+	list-style: none;
+	width: 1160px;
+	height: 180px;
+}
+
+.partners li {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	margin-left: 90px;
+}
+
+.discount {
+	display: inline;
+	text-align: center;
 }

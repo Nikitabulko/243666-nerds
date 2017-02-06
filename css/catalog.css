@@ -3,5 +3,8 @@ body {
 	color: #283136;
 	font-weight: normal;
 	font-family: Roboto;
+	background-color: #ffffff;
+}
+.main-header {
 	background-color: #eeeeee;
 }
