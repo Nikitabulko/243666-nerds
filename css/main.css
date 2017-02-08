@@ -1,13 +1,13 @@
 body {
    font-size: 16px;
    color: #283136;
-   font-weight: normal;
-   font-family: Roboto;
-   background-color: #ffffff;
+   font-weight: bold normal;
+   font-family: Verdana serif Roboto;
 }
 
 header {
-	background-image: url("../img/grey back.jpg");
+	background-color: #eeeeee;
+	width: 1440px;
 }
 
 .main-header {
@@ -16,6 +16,13 @@ header {
 
 .container {
 	padding: 10px 10px;
+	width: 1440px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .logo {
@@ -37,17 +44,18 @@ header {
 }
 
 .main-navigation li {
-	list-style;
+	list-style: none;
 	display: inline;
 	padding: 10px;
 	padding-left: 30px;
 }
-/*как корзину сделать правильно? как разьединить саму корзину с надписью?*/
+/*как корзину сделать правильно? как разьединить саму корзину с надписью?
+Я не знаю как сделать спрайт на background*/
 
 .basket a {
 	display: block;
 	float: right;
-	min-height: 40px;
+	height: 40px;
 	margin-right: 140px;
 	margin-top: 50px;
 	padding: 10px;
@@ -73,30 +81,17 @@ header {
 	height: 413px;
 }
 
-.declaration {
+.declarations {
 	background: lightblue;
 	margin-top: 80px;
+	margin-left: 40px;
 }
 
-.declaration-1 {
-	float: left;
-	margin-left: 140px;
-	width: 300px;
-	height: 350px;
-}
-
-.declaration-2 {
+.declaration {
 	float: left;
 	margin-left: 100px;
+	margin-right: 40px;
 	width: 300px;
-	height: 350px;
-}
-
-.declaration-3 {
-	float: left;
-	margin-left: 100px;
-	width: 300px;
-	height: 350px;
 }
 
 .left-column {
@@ -106,9 +101,9 @@ header {
 	height: 370px;
 }
 /* нижнее правило не работает не меняется размер шрифта*/
-.left-column .cutaway-1 {
+.cutaway-1 {
 	font-size: 45px;
-	font-weight: medium;
+	font-weight: normal;
 }
 
 .logo-color {
@@ -120,10 +115,8 @@ header {
 
 .right-column {
 	float: right;
-	margin-right: 0px;
 	margin-top: 40px;
 	padding-left: 50px;
-	padding-right: 0;
 	width: 360px;
 	height: 160px;
 
@@ -151,4 +144,7 @@ header {
 /* и этот список с процентами, не пойму как вертикально повернуть?*/
 .right-column li {
 	list-style: none;
+}
+footer {
+	width: 1440px;
 }
