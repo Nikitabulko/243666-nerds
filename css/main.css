@@ -1,13 +1,16 @@
 body {
    font-size: 16px;
    color: #283136;
-   font-weight: bold normal;
-   font-family: Verdana serif Roboto;
+   font-weight: normal;
+   font-family: Roboto;
 }
 
 header {
 	background-color: #eeeeee;
-	width: 1440px;
+}
+
+.header-bottom {
+
 }
 
 .main-header {
@@ -15,8 +18,9 @@ header {
 }
 
 .container {
-	padding: 10px 10px;
 	width: 1440px;
+	padding: 0 140px;
+	margin: auto;
 }
 
 .clearfix::after {
@@ -54,44 +58,156 @@ header {
 
 .basket a {
 	display: block;
-	float: right;
-	height: 40px;
+	float: left;
+	height: 45px;
+	margin-left: 80px;
 	margin-right: 140px;
 	margin-top: 50px;
 	padding: 10px;
 	background: lightyellow;
 }
 
-.column1 {
-	width: 380px;
-	height: 200px;
-	padding-left: 140px;
-}
-/*самая главная проблема. слайдер-слоган не получается одним кведратным блоком разместить
-разбивается на две строки (с красным фоном), а в блоке column1 почемуто не размещается*/
-.slider-slogan,
 .slider-top-content {
-	clear: both;
 	display: block;
 }
-/* картинку слайдера не могу упорядочить... */
+
 .slider {
-	float: right;
-	width: 698px;
+	position: relative;
+	width: 1440px;
 	height: 413px;
+	margin: 0 auto;
+}
+
+.slider input[type=radio] {
+	position: absolute;
+	opacity: 0;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+    background: white;
+    border: 3px solid white;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background: #c1c1c1;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide-text{
+    width: 380px;
+    padding: 30px 0;
+    color: #283136;
+}
+
+.slide-title{
+    font-size: 55px;
+    line-height: 1;
+    font-weight: bold;
+    color: black;
+}
+
+.slide:nth-child(1) {
+    background-image:url("../img/slide1.png");
+    background-repeat: no-repeat;
+    background-position: 100% 10px;
+}
+
+.slide:nth-child(2) {
+	background-image:url(""../img/slide2.png"");
+	background-repeat: no-repeat;
+    background-position: 100% 10px;
+}
+
+.slide:nth-child(3) {
+	background-image:url(""../img/slide3.png"");
+	background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.slide {
+	display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) { 
+    display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) { 
+    display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) { 
+    display: block;
 }
 
 .declarations {
-	background: lightblue;
 	margin-top: 80px;
-	margin-left: 40px;
 }
 
 .declaration {
 	float: left;
-	margin-left: 100px;
-	margin-right: 40px;
+	margin-left: 140px;
 	width: 300px;
+}
+
+article h2 {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.btn {
+	display: inline-block;
+	padding: 15px 40px;
+	color: white;
+	background: #fb565a;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+
+.btn-declaration2 {
+	background: #00ca74;
+}
+
+.btn-declaration3 {
+	background: #efc849;
+}
+
+.feauters-bottom {
+	min-height: 530px;
+	border-top: 2px solid #eeeeee;
+	margin-top: 80px;
+	padding-top: 20px;
+	padding-bottom: 60px;
 }
 
 .left-column {
@@ -100,18 +216,25 @@ header {
 	width: 660px;
 	height: 370px;
 }
-/* нижнее правило не работает не меняется размер шрифта*/
+
 .cutaway-1 {
 	font-size: 45px;
 	font-weight: normal;
+	font-family: Roboto;
 }
 
 .logo-color {
 	float: right;
-	margin-right: 0px;
+	margin-right: 60px;
 	width: 360px;
 	height: 208px;
 }
+
+.exactness {
+	font-size: 16px;
+	font-weight: bold;
+}
+
 
 .right-column {
 	float: right;
@@ -119,21 +242,40 @@ header {
 	padding-left: 50px;
 	width: 360px;
 	height: 160px;
+}
 
+.wrap {
+	font-size: 45px;
+	font-weight: bold;
+	font-family: Roboto;
+}
+
+.prc {
+	font-size: 30px;
+	line-height: 50px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .partners {
 	clear: both;
 	list-style: none;
+	display: inline-block;
 	width: 1160px;
-	height: 180px;
+	height: 184px;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+
 }
+/*не получается эти элементы выровнять по верникали,
+чтобы они распологались по центру, похоже что-то я
+тут с display напортачил */
 
 .partners li {
-	display: inline-block;
+	display: inline;
 	vertical-align: middle;
 	text-align: center;
-	margin-left: 90px;
+	margin-left: 100px;
 }
 
 
@@ -141,10 +283,32 @@ header {
 	display: inline;
 	text-align: center;
 }
-/* и этот список с процентами, не пойму как вертикально повернуть?*/
+
+.discount-top {
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Roboto;
+}
+/* и этот список с процентами,
+все равно вертикально не поворачивается?*/
 .right-column li {
 	list-style: none;
 }
-footer {
-	width: 1440px;
+
+.contacts {
+	width: 320px;
+	height: 310px;
+	background: lightblue;
+	margin-left: 140px;
+	padding: 40px;
 }
+
+.contacts h3 {
+	font-weight: bold;
+}
+
+
+footer {
+	width: px;
+}
+/*И как карту сделать интерактивной?*/
