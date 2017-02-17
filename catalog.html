@@ -37,39 +37,45 @@
 	    	<div class="shop-columns clearfix">
 	    		<div class="shop-column-left">
 	    			<form action="form.php" method="GET">
-        				<h3>Стоимость:</h3>
-        				<div class="range-filter">
-        					<div class="range-controls">
-          						<div class="scale">
-            						<div class="bar" style="margin-left: 20%; width: 30%"></div>
-          						</div>
-          						<div class="toggle toggle-min"></div>
-          						<div class="toggle toggle-max"></div>
-        					</div>
-        					<div class="price-controls">
-          						<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          						<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+	    				<div class="form-filter">
+        					<h3>Стоимость:</h3>
+        					<div class="range-filter">
+        						<div class="range-controls">
+          							<div class="scale">
+            							<div class="bar" style="margin-left: 20%; width: 30%"></div>
+          							</div>
+          							<div class="toggle toggle-min"></div>
+          							<div class="toggle toggle-max"></div>
+        						</div>
+        						<div class="price-controls">
+          							<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          							<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        						</div>
         					</div>
       					</div>
-      					 <h3>Сетка:</h3>
-        				<input type="radio" name="grid" id="adaptive-id">
-        				<label for="adaptive-id">Адаптивная</label>
-        				<input type="radio" name="grid" id="fixed-id">
-        				<label for="fixed-id">Фиксированная</label>
-        				<input type="radio" name="grid" id="rubber-id">
-        				<label for="rubber-id">Резиновая</label>
-        				<h3 class="form-feature-title">Особенности:</h3>
-        				<input type="checkbox" name="slider" id="slider-id">
-        				<label for="slider-id">Слайдер</label>
-        				<input type="checkbox" name="block-features" id="block-features-id">
-        				<label for="block-features-id">Блок преимуществ</label>
-        				<input type="checkbox" name="news" id="news-id">
-        				<label for="news-id">Новости</label><br>
-        				<input type="checkbox" name="gallery" id="gallery-id">
-        				<label for="gallery-id">Галерея</label><br>
-        				<input type="checkbox" name="basket" id="basket-id">
-        				<label for="basket-id">Корзина</label>
-        				<input type="submit" name="submit-show" value="Показать">
+      					<div class="form-block-top">
+      						<h3>Сетка:</h3>
+        					<input type="radio" name="grid" id="adaptive-id">
+        					<label for="adaptive-id">Адаптивная</label>
+        					<input type="radio" name="grid" id="fixed-id">
+        					<label for="fixed-id">Фиксированная</label>
+        					<input type="radio" name="grid" id="rubber-id">
+        					<label for="rubber-id">Резиновая</label>
+        				</div>
+        				<div class="form-block-bottom">
+        					<h3 class="form-feature-title">Особенности:</h3>
+        					<input type="checkbox" name="slider" id="slider-id">
+        					<label for="slider-id">Слайдер</label>
+        					<input type="checkbox" name="block-features" id="block-features-id">
+        					<label for="block-features-id">Блок преимуществ</label>
+        					<input type="checkbox" name="news" id="news-id">
+        					<label for="news-id">Новости</label><br>
+        					<input type="checkbox" name="gallery" id="gallery-id">
+        					<label for="gallery-id">Галерея</label><br>
+        					<input type="checkbox" name="basket" id="basket-id">
+        					<label for="basket-id">Корзина</label>
+        				</div>
+        					<input type="submit" name="submit-show" value="Показать">
     				</form>
 	    		</div>
 	    		<div class="shop-column-right">
@@ -81,82 +87,90 @@
 	    				<li><a class="dir dir-up" href="#"></a></li>
 	    				<li><a class="dir dir-down" href="#"></a></li>
 	    			</ul>
-	    			<div class="catalog">
-	    			</div>
-	    		</div>
-	    	</div> 
-	    	<!-- <div class="products">
-	    		<span>Стоимость:</span>
-	    		<span>Сортировать:</span>
-	    		<div class="section-left">
-	    			<ul>
-	    				<li>
-	    					<form action="#" method="get">стоимость:</form>
-	    				</li>
-	    				<li>
-	    					<form action="#" method="get">сетка:</form>
-	    				</li>
-	    				<li>
-	    					<form action="#" method="get">особенности:</form>
-	    				</li>
-	    			</ul>
-	    			<a class="section-left-btn" href="#">показать</a>
-	        	</div>
-	    		<div class="section-right">
-	    			<div class="column-left">
-	    				<ul> 
-	    					<li>
-	    						<a href="#">
-	    							<img src="img/product1.jpg" width="360" height="616" alt="sedona">
-	    						</a>
-	    					</li>
-	    					<li>
-	    						<a href="#">
-	    							<img src="img/product2.jpg" width="360" height="616" alt="borodinski">
-	    						</a>
-	    					</li>
-	    					<li>
-	    						<a href="#">
-	    							<img src="img/product3.jpg" width="360" height="616" alt="A+">
-	    						</a>
-	    					</li>
-	    				</ul>
-	    			</div>  		
-	    			<div class="column-right">
-	    				<ul>
-	    					<li>
-	    						<a href="#">
-	    							<img src="img/product4.jpg" width="360" height="616" alt="pink">
-	    						</a>
-	    					</li>
-	    					<li>
-	    						<a href="#">
-	    							<img src="img/product5.jpg" width="360" height="616" alt="mishka">
-	    						</a>
-	    					</li>
-	    					<li>
-	    						<a href="#">
-	    							<img src="img/product6.jpg" width="360" height="616" alt="кваст">
-	    						</a>
-	    					</li>
-	    				</ul>
-	    			</div>
-	    		</div> -->
-	    		<!-- <ul class="paginator">
-	    			<li class="active">
-	    				<a href>1</a>
-	    			</li>
-	    			<li>
-	    				<a href="#">2</a>
-	    			</li>
-	    			<li>
-	    				<a href="#">3</a>
-	    			</li>
-	    			<li>
-	    				<a class="next" href="#">Следущая</a>
-	    			</li>
-	    		</ul>
-	    	</div> -->
+	    			<!--САМ КАТАЛОГ	НАЧАЛО -->
+						
+					<div class="catalog">
+						<article class="catalog-item">
+							<div class="item-controls">
+								<button type="button"></button>
+            					<button type="button"></button>
+            					<button type="button"></button>
+							</div>
+							<div class="catalog-content">
+								<h2>SEDONA</h2>
+            					<p>Информационный сайт для туристов</p>
+            					<button class="item-price btn" type="button">9 900 РУБ.</button>
+							</div>
+						</article>
+						<article class="catalog-item">
+							<div class="item-controls">
+								<button type="button"></button>
+            					<button type="button"></button>
+            					<button type="button"></button>
+							</div>
+							<div class="catalog-content">
+								<h2>PINK APP</h2>
+            					<p>Продуктовый лендинг приложения для iOS и Android</p>
+            					<button class="item-price btn" type="button">9 900 РУБ.</button>
+							</div>
+						</article>
+						<article class="catalog-item">
+							<div class="item-controls">
+								<button type="button"></button>
+            					<button type="button"></button>
+            					<button type="button"></button>
+							</div>
+							<div class="catalog-content">
+								<h2>BARBERSHOP</h2>
+            					<p>Сайт салона красоты. Для мужчин, да.</p>
+            					<button class="item-price btn" type="button">9 900 РУБ.</button>
+							</div>
+						</article>
+						<article class="catalog-item">
+							<div class="item-controls">
+								<button type="button"></button>
+            					<button type="button"></button>
+            					<button type="button"></button>
+							</div>
+							<div class="catalog-content">
+								<h2>MISHKA</h2>
+            					<p>Интернет-магазин вязаных игрушек</p>
+            					<button class="item-price btn" type="button">9 900 РУБ.</button>
+							</div>
+						</article>
+						<article class="catalog-item">
+							<div class="item-controls">
+								<button type="button"></button>
+            					<button type="button"></button>
+            					<button type="button"></button>
+							</div>
+							<div class="catalog-content">
+								<h2>A PLUS</h2>
+            					<p>Лендинг курсов повышения квалификации</p>
+            					<button class="item-price btn" type="button">9 900 РУБ.</button>
+							</div>
+						</article>
+						<article class="catalog-item">
+							<div class="item-controls">
+								<button type="button"></button>
+            					<button type="button"></button>
+            					<button type="button"></button>
+							</div>
+							<div class="catalog-content">
+								<h2>КВАСТ</h2>
+            					<p>Промо-сайт производителя крафтового кваса</p>
+            					<button class="item-price btn" type="button">9 900 РУБ.</button>
+							</div>
+						</article>
+	    				<ul class="paginator">
+          					<li class="active"><a href="">1</a></li>
+          					<li><a href="#">2</a></li>
+          					<li><a href="#">3</a></li>
+          					<li><a class="next" href="#">Следующая</a></li>
+        				</ul>
+        			</div>
+        			<!-- КАТАЛОГ КОНЕЦ -->
+	    		</div> 
 			<div class="address">
 				<div class="map"></div>
 				<div class="container-map">
@@ -184,8 +198,8 @@
 					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 				</div>
 				<div class="discount">
-					<p class="discount-top">Давайте дружить, это выгодно!<br>
-					<span class="discount-bottom">Скидка 10% для друзей из социальных сетей.</span></p>
+					<p class="discount-top">Давайте дружить, это выгодно!</p>
+					<span class="discount-bottom">Скидка 10% для друзей из социальных сетей.</span>
 				</div>
 			</div>
 		</footer>
