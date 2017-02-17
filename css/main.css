@@ -302,7 +302,7 @@ header {
 /*Column-left - сетка и оформление левой колонки*/
 
 .shop-column-left {
-	/*float; left;*/
+	float; left;
 }
 
 .range-filter {/* фильтр */
