@@ -768,22 +768,22 @@ footer {
 }
 
 .catalog .catalog-item:nth-child(1){
-	background: #c1c1c1 url("../img/item-1.jpg");
+	background: #c1c1c1 
 }
 .catalog .catalog-item:nth-child(2){
-	background: #c1c1c1 url("../img/item-2.jpg");
+	background: #c1c1c1
 }
 .catalog .catalog-item:nth-child(3){
-	background: #c1c1c1 url("../img/item-3.jpg");
+	background: #c1c1c1 
 }
 .catalog .catalog-item:nth-child(4){
-	background: #c1c1c1 url("../img/item-4.jpg");
+	background: #c1c1c1 
 }
 .catalog .catalog-item:nth-child(5){
-	background: #c1c1c1 url("../img/item-5.jpg");
+	background: #c1c1c1 
 }
 .catalog .catalog-item:nth-child(6){
-	background: #c1c1c1 url("../img/item-6.jpg");
+	background: #c1c1c1 
 }
 .catalog-item:nth-child(2n){
 	margin-right: 0;
