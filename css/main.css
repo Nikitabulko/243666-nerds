@@ -3,6 +3,7 @@ body {
    color: #283136;
    font-weight: normal;
    font-family: Roboto;
+   min-width: 1200px;
 }
 
 header {
@@ -14,6 +15,10 @@ header {
 }
 
 .main-header {
+	width: 1200px;
+	margin-bottom: 80px;
+	margin-left: auto;
+	margin-right: auto; 
 	min-height: 546px;
 }
 
@@ -25,7 +30,7 @@ header {
 .container {
 	box-sizing: border-box;
 	width: 1200px;
-	padding: 0px;
+	padding: 20px;
 	margin: auto;
 }
 
@@ -40,7 +45,7 @@ header {
 	float: left;
 	width: 160px;
 	min-height: 65px;
-	margin-left: 100px;
+	/*margin-left: 100px;*/
 	margin-top: 50px;
 }
 
@@ -158,14 +163,12 @@ header {
 
 
 .basket {
-	margin-right: 10px;
+	float: left;
+	margin-left: 140px;
 }
 
 .basket a {
-	
-	float: left;
 	height: 45px;
-	margin-left: 100px;
 	margin-top: 50px;
 	padding-top: 30px;
 	padding-left: 90px;
@@ -175,8 +178,8 @@ header {
 }
 
 .title1 {
-	text-align: center;
 	vertical-align: middle;
+	text-align: center;
 	font-size: 55px;
 }
 
@@ -190,7 +193,7 @@ header {
 	position: relative;
 	width: 1160px;
 	height: 420px;
-	margin-left: 100px;
+	/*margin-left: 100px;*/
 	/*margin: 0 auto;*/
 }
 
@@ -238,7 +241,7 @@ header {
 }
 
 .slide-text {
-	width: 470px;
+	width: 600px;
 	padding: 70px 0;
 	color: #283136;
 }
@@ -306,6 +309,7 @@ header {
 
 .shop-column-left {
 	float: left;
+	margin-top: 20px;
 }
 
 .range-filter {/* фильтр */
@@ -388,7 +392,7 @@ header {
 form {
 	width: 260px;
 	height: 775px;
-	margin-left: 100px;
+	/*margin-left: 100px;*/
 }
 
 .shop-column-left input[type="checkbox"], .shop-column-left input[type="radio"]{
@@ -474,7 +478,7 @@ form {
 .shop-column-right {
 	float: left;
 	width: 760px;
-	margin-left: 80px;
+	margin-left: 140px;
 	
 }
 
@@ -483,7 +487,7 @@ form {
 	display: inline-block;
 	list-style: none;
 	margin-left: 360px;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	margin-bottom: 40px;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -500,17 +504,19 @@ form {
 }
 
 .sorting-h3 {
-	position: absolute;
-	left: 675px;
+	display: inline;
+	position: relative;
+	top: 30px;
+	
 }
 
 .declarations {
-	margin-top: 80px;
+	/*margin-top: 80px;*/
 }
 
 .declaration {
 	float: left;
-	margin-left: 100px;
+	margin-right: 80px;
 	width: 300px;
 }
 
@@ -549,14 +555,7 @@ article h2 {
 	border-top: 2px solid #eeeeee;
 	margin-top: 80px;
 	padding-top: 20px;
-	padding-bottom: 60px;
-}
-
-.left-column {
-	float: left;
-	margin-left: 100px;
-	width: 660px;
-	height: 370px;
+	padding-bottom: 30px;
 }
 
 .cutaway-1 {
@@ -564,6 +563,7 @@ article h2 {
 	font-weight: normal;
 	font-family: Roboto;
 	margin-bottom: 30px;
+	width: 670px;
 }
 
 .cutaway-3 {
@@ -571,7 +571,7 @@ article h2 {
 	font-weight: bold;
 	font-family: Roboto;
 	text-transform: uppercase;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 .list {
@@ -580,7 +580,10 @@ article h2 {
 }
 
 .left-column {
-	width: 630px;
+	float: left;
+	width: 660px;
+	margin-top: 30px;
+	/*height: 370px;*/
 }
 
 .left-column li {
@@ -603,8 +606,8 @@ article h2 {
 
 .logo-color {
 	float: right;
-	margin-top: 25px;
-	margin-right: 70px;
+	margin-top: 30px;
+	margin-right: 50px;
 	width: 360px;
 	height: 208px;
 }
@@ -618,8 +621,8 @@ article h2 {
 
 .right-column {
 	float: right;
-	margin-top: 60px;
-	margin-right: 90px;
+	margin-top: 35px;
+	margin-right: 60px;
 	width: 380px;
 	height: 170px;
 }
@@ -631,7 +634,6 @@ article h2 {
 }
 
 .right-column ul {
-	
 	
 }
 
@@ -653,7 +655,7 @@ article h2 {
 .partners {
 	clear: both;
 	list-style: none;
-	margin-left: 100px;
+	/*margin-left: 100px;*/
 	margin-bottom: 85px;
 	padding: 40px 0px;
 	display: inline-block;
@@ -671,7 +673,7 @@ article h2 {
 
 .discount {
 	display: inline-block;
-	margin-left: 570px;
+	margin-left: 470px;
 	margin-top: -100px;
 	margin-bottom: 50px;
 }
@@ -697,7 +699,7 @@ article h2 {
 	text-align: center;
 	position: relative;
 	bottom: 15px;
-	left: 80px;
+	left: 130px;
 }
 
 .contacts h3 {
@@ -724,6 +726,8 @@ article h2 {
 .map {
 	background-image:url("../img/map.png"); 
 	min-height: 418px;
+	width: 1440px;
+	/*margin-left: 220px;*/
 }
 
 .address .container-map {
@@ -738,7 +742,7 @@ article h2 {
 }
 
 .footer-social {
-	margin-left: 130px;
+	margin-left: 30px;
 }
 
 footer {
@@ -894,3 +898,9 @@ footer {
 	background: #d5d5d5;
 	box-shadow: inset 0 3px #b5b5b5;
 }
+
+/**,
+*::after,
+*::before {
+  box-sizing: border-box;
+}*/
