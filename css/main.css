@@ -682,19 +682,10 @@ article h2 {
 
 }
 
-/*.map-marker {
-	background-repeat: no-repeat;
-	position: relative;
-	bottom: 270px;
-	left: 800px;
-
-}*/
-
 .contacts {
 	width: 320px;
 	height: 310px;
 	padding-top: 0px;
-	/*border: 1px solid red;*/
 	background-color: white;
 	text-align: center;
 	position: relative;
